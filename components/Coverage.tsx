@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from './Section';
 import { COVERAGE_ITEMS, CO_PAYMENT_CONDITIONS, CO_PAYMENT_COVERED, CO_PAYMENT_NOT_COVERED } from '../constants';
-import { Check, X, Calendar, Banknote, ShieldCheck, Image as ImageIcon } from 'lucide-react';
+import { Check, X, Calendar, Banknote, ShieldCheck } from 'lucide-react';
 
 const Coverage: React.FC = () => {
   return (
@@ -88,13 +88,14 @@ const Coverage: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Right: Image Placeholder */}
+                {/* Right: Image - image3.jpg */}
                 <div className="lg:w-4/12 relative flex justify-center lg:justify-end">
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white w-full max-w-md aspect-[16/10] bg-teal-50 flex items-center justify-center group">
-                        <div className="flex flex-col items-center justify-center text-slate-400">
-                             <ImageIcon className="w-16 h-16 mb-2 opacity-50 group-hover:scale-110 transition-transform duration-500 text-teal-300" />
-                             <span className="font-bold text-sm uppercase tracking-wider text-teal-300">Image Placeholder</span>
-                        </div>
+                        <img 
+                            src="image3.jpg" 
+                            alt="RM10 Clinic Benefit" 
+                            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                        />
                         <div className="absolute inset-0 bg-gradient-to-t from-teal-100/40 via-transparent to-transparent"></div>
                     </div>
                 </div>

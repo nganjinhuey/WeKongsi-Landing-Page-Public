@@ -2,7 +2,7 @@ import React from 'react';
 import Section from './Section';
 import { FEATURES } from '../constants';
 import Button from './Button';
-import { ArrowRight, Sparkles, Image as ImageIcon } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 
 const Features: React.FC = () => {
   const scrollToJoin = () => {
@@ -53,13 +53,14 @@ const Features: React.FC = () => {
                     </Button>
                 </div>
 
-                {/* Right Image Placeholder */}
+                {/* Right Image - image2.jpg */}
                 <div className="w-full lg:w-1/2 relative">
                     <div className="rounded-3xl overflow-hidden shadow-2xl relative border-4 border-white/50 min-h-[400px] bg-slate-200 flex items-center justify-center group">
-                        <div className="flex flex-col items-center justify-center text-slate-400">
-                             <ImageIcon className="w-20 h-20 mb-4 opacity-50 group-hover:scale-110 transition-transform duration-500" />
-                             <span className="font-bold text-lg uppercase tracking-wider">Image Placeholder</span>
-                        </div>
+                        <img 
+                            src="image2.jpg" 
+                            alt="We Kongsi Community" 
+                            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                        />
 
                         {/* Overlay Card */}
                         <div className="absolute bottom-6 left-6 max-w-xs bg-white/90 backdrop-blur-md p-5 rounded-xl shadow-xl text-brand-navy border border-white/50">
