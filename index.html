@@ -424,12 +424,13 @@
                 </div>
 
                 <div className="w-full lg:w-1/2 relative">
-                   <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] border-[6px] border-white ring-1 ring-slate-100 bg-slate-200 flex items-center justify-center group">
-                      <div className="flex flex-col items-center justify-center text-slate-400">
-                          <ImageIcon className="w-20 h-20 mb-4 opacity-50 group-hover:scale-110 transition-transform duration-500" />
-                          <span className="font-bold text-lg uppercase tracking-wider">Image Placeholder</span>
-                          <span className="text-sm opacity-70">1200 x 900</span>
-                      </div>
+                   <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] border-[6px] border-white ring-1 ring-slate-100 bg-slate-200 group">
+                      <img 
+                        src="image1.jpg" 
+                        alt="Happy family enjoying healthcare protection" 
+                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-brand-navy/5 group-hover:bg-transparent transition-colors duration-500"></div>
                    </div>
                    <div className="absolute -top-10 -right-10 w-40 h-40 bg-brand-teal/20 rounded-full blur-3xl -z-10 mix-blend-multiply"></div>
                    <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-brand-navy/10 rounded-full blur-3xl -z-10 mix-blend-multiply"></div>
