@@ -20,7 +20,7 @@ const Partners: React.FC = () => {
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-100 rounded-full blur-[100px] translate-x-1/2 translate-y-1/2 opacity-60"></div>
       
       {/* Title Area */}
-      <div className="text-center mb-10 relative z-10">
+      <div className="text-center mb-16 relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-brand-navy">Our Partners & Compliance</h2>
         <p className="text-lg md:text-xl max-w-3xl mx-auto text-slate-600 mt-4">Verified compliance and trusted collaborations for your peace of mind.</p>
         <div className="w-24 h-1 mx-auto mt-6 rounded-full bg-brand-navy"></div>

@@ -35,7 +35,7 @@ const Coverage: React.FC = () => {
       </Section>
 
       {/* RM10 Benefit Section - Fresh Mint/Teal Theme */}
-      <section className="py-12 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 overflow-hidden relative">
+      <section className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 overflow-hidden relative">
         {/* Background Patterns */}
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#0d9488 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-teal-100 rounded-full blur-[100px] -translate-y-1/3 translate-x-1/3 opacity-80 mix-blend-multiply"></div>
@@ -44,7 +44,7 @@ const Coverage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
             {/* Top Row: Content Left, Image Right */}
-            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-10">
+            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-16">
                 
                 {/* Left: Text Content & Bubbles */}
                 <div className="lg:w-7/12 text-left">

@@ -120,12 +120,12 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <section className="py-12 bg-blue-100 relative overflow-hidden">
+    <section className="py-16 bg-blue-100 relative overflow-hidden">
       {/* Background - Soft Blue Theme with gradient blobs */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-200 rounded-full blur-[100px] opacity-40 pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-teal-200 rounded-full blur-[100px] opacity-40 pointer-events-none translate-y-1/2 -translate-x-1/3"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center mb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center mb-10">
         <h2 className="text-2xl md:text-3xl font-bold text-brand-navy">Stories of Trust & Relief</h2>
         <p className="text-slate-600 mt-2 text-lg font-medium">Real stories from our community members who found peace of mind.</p>
         <div className="w-16 h-1 mx-auto mt-4 rounded-full bg-brand-navy/20"></div>

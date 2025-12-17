@@ -37,7 +37,7 @@ const Impact: React.FC = () => {
         <div className="absolute top-0 right-0 w-96 h-96 bg-purple-100 rounded-full blur-[80px] translate-x-1/2 -translate-y-1/2"></div>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto flex flex-col gap-4 mb-6">
+      <div className="relative z-10 max-w-4xl mx-auto flex flex-col gap-4 mb-8">
         
         {/* HIERARCHY LEVEL 1: Dominant Card (Total Members) - WHITE CARD */}
         <div className="bg-white rounded-3xl p-6 border border-slate-100 shadow-xl text-center flex flex-col items-center justify-center min-h-[200px] transform transition-transform hover:scale-[1.01] relative overflow-hidden group">
@@ -88,7 +88,7 @@ const Impact: React.FC = () => {
       </div>
 
       {/* Graph Section - Larger Card */}
-      <div className="max-w-5xl mx-auto bg-white rounded-3xl p-6 md:p-8 shadow-xl border border-slate-100 relative overflow-hidden">
+      <div className="max-w-5xl mx-auto bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-slate-100 relative overflow-hidden">
         <h3 className="text-xl md:text-2xl font-bold text-brand-navy mb-6 text-center">Average Monthly Sharing Fee (2025)</h3>
         
         <div className="h-[350px] w-full relative z-10">
@@ -125,7 +125,7 @@ const Impact: React.FC = () => {
         </div>
 
         {/* Value Context Bubble - Rewritten */}
-        <div className="mt-6 flex justify-center">
+        <div className="mt-8 flex justify-center">
             <div className="bg-slate-50 border border-slate-100 rounded-full px-5 py-3 flex items-center space-x-3 shadow-sm hover:shadow-md transition-shadow">
                 <div className="bg-brand-navy p-1.5 rounded-full text-white">
                     <Coffee className="w-4 h-4" />
