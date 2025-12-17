@@ -86,13 +86,13 @@ const PainPoints: React.FC = () => {
                 
                  {/* Radiant Multi-Layer Glow Effects - DIMMED OPACITY */}
                  
-                 {/* 1. Large Outer Aura (Slow Rotate) - Opacity reduced to 30 */}
-                 <div className="absolute inset-[-50%] rounded-full animate-[spin_10s_linear_infinite] pointer-events-none opacity-30">
+                 {/* 1. Large Outer Aura (Slow Rotate) - Slowed to 30s */}
+                 <div className="absolute inset-[-50%] rounded-full animate-[spin_30s_linear_infinite] pointer-events-none opacity-20">
                     <div className="w-full h-full rounded-full bg-[conic-gradient(from_0deg,transparent_0deg,theme(colors.teal.200)_120deg,transparent_240deg)] blur-[70px]"></div>
                  </div>
 
-                 {/* 2. Medium Brighter Shine (Reverse Rotate) - Opacity reduced to 40 */}
-                 <div className="absolute inset-[-25%] rounded-full animate-[spin_5s_linear_infinite_reverse] pointer-events-none opacity-40">
+                 {/* 2. Medium Brighter Shine (Reverse Rotate) - Slowed to 25s */}
+                 <div className="absolute inset-[-25%] rounded-full animate-[spin_25s_linear_infinite_reverse] pointer-events-none opacity-30">
                     <div className="w-full h-full rounded-full bg-gradient-to-tr from-transparent via-cyan-100 to-transparent blur-3xl"></div>
                  </div>
 
@@ -100,7 +100,7 @@ const PainPoints: React.FC = () => {
                  <div className="absolute inset-[-5%] rounded-full bg-white/20 blur-3xl animate-pulse pointer-events-none"></div>
 
                 {/* SVG Content */}
-                 <svg viewBox={`0 0 ${size} ${size}`} className="w-full h-full drop-shadow-2xl overflow-visible relative z-10">
+                 <svg viewBox={`0 0 ${size} ${size}`} className="w-full h-full drop-shadow-2xl overflow-visible relative z-10" role="img" aria-label="Pie chart showing 78% of Malaysians are unprotected">
                     <defs>
                         <filter id="shadow-light" x="-20%" y="-20%" width="140%" height="140%">
                             <feGaussianBlur stdDeviation="3" result="blur" />
@@ -110,7 +110,7 @@ const PainPoints: React.FC = () => {
                         {/* Gradient opacity reduced */}
                         <linearGradient id="shineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                              <stop offset="0%" stopColor="rgba(255,255,255,0)" />
-                             <stop offset="50%" stopColor="rgba(255,255,255,0.5)" />
+                             <stop offset="50%" stopColor="rgba(255,255,255,0.4)" />
                              <stop offset="100%" stopColor="rgba(255,255,255,0)" />
                         </linearGradient>
                     </defs>
@@ -174,8 +174,8 @@ const PainPoints: React.FC = () => {
                         />
                     </g>
                     
-                    {/* Overlay Rotating Ring Shine - Brighter & Faster - DIMMED OPACITY */}
-                    <circle cx={center} cy={center} r={r} fill="none" stroke="url(#shineGradient)" strokeWidth={stroke} strokeDasharray={`${circ * 0.25} ${circ * 0.75}`} className="animate-[spin_3s_linear_infinite] origin-center opacity-40 mix-blend-overlay" />
+                    {/* Overlay Rotating Ring Shine - Brighter & Faster - DIMMED OPACITY - SLOWED to 15s */}
+                    <circle cx={center} cy={center} r={r} fill="none" stroke="url(#shineGradient)" strokeWidth={stroke} strokeDasharray={`${circ * 0.25} ${circ * 0.75}`} className="animate-[spin_15s_linear_infinite] origin-center opacity-30 mix-blend-overlay" />
 
                 </svg>
                 
