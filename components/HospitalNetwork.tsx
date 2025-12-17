@@ -14,8 +14,8 @@ const HospitalNetwork: React.FC = () => {
   const SCROLL_ITEMS = [...NETWORK_ITEMS, ...NETWORK_ITEMS];
 
   return (
-    <section className="py-16 bg-slate-50 border-b border-slate-200 overflow-hidden relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+    <section className="py-12 bg-slate-50 border-b border-slate-200 overflow-hidden relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
         <h2 className="text-2xl md:text-3xl font-bold text-brand-navy">Our Trusted Hospital & Clinic Network</h2>
         <p className="text-slate-500 mt-2 max-w-2xl mx-auto">
             Part of a wide medical network connecting you to quality care nationwide.

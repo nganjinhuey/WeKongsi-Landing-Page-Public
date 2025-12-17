@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
     <footer className="bg-brand-navy text-slate-300">
         
         {/* Redesigned CTA Section */}
-        <div id="join-section" className="bg-brand-surface-navy py-20 px-4 md:px-8 relative overflow-hidden">
+        <div id="join-section" className="bg-brand-surface-navy py-12 px-4 md:px-8 relative overflow-hidden">
             {/* Background Pattern */}
              <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#16647d 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
             
@@ -82,8 +82,8 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Main Footer Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
                 {/* Brand */}
                 <div>
                     <div className="flex items-center space-x-2 mb-6">

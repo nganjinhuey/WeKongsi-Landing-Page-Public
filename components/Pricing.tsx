@@ -44,7 +44,7 @@ const Pricing: React.FC = () => {
     >
       
       {/* 1. Membership Fee Section */}
-      <div className="mb-24">
+      <div className="mb-12">
           <div className="text-center mb-10">
             <h3 className="text-2xl font-bold text-brand-navy">1. Membership Fee</h3>
             <p className="text-slate-500">Choose a plan that fits your budget.</p>
@@ -188,7 +188,7 @@ const Pricing: React.FC = () => {
           </div>
 
           {/* New Explanation Block */}
-          <div className="mt-12 max-w-5xl mx-auto bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-sm flex flex-col md:flex-row items-center gap-10">
+          <div className="mt-8 max-w-5xl mx-auto bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-sm flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
                 <div className="flex items-center gap-3 mb-4">
                     <div className="bg-brand-surface-blue p-2 rounded-lg text-brand-blue">
@@ -212,7 +212,7 @@ const Pricing: React.FC = () => {
           </div>
       </div>
       
-      <div className="mt-16 text-center">
+      <div className="mt-8 text-center">
          <p className="text-slate-500 mb-4 font-medium">Not sure which plan is right for you?</p>
          <Button 
             className="rounded-full px-8 py-3 bg-teal-800 text-white shadow-lg hover:shadow-xl hover:bg-teal-700 transform transition-all duration-300 hover:-translate-y-1"

@@ -7,7 +7,7 @@ const ScenarioCard: React.FC<{
     bill: string; 
     members: string; 
     outcomeTitle: string;
-    outcomeDesc: string;
+    outcomeDesc: React.ReactNode;
     highlight: string;
     colorClass: string;
 }> = ({ situationNumber, title, bill, members, outcomeTitle, outcomeDesc, highlight, colorClass }) => {
@@ -73,7 +73,9 @@ const ScenarioCard: React.FC<{
                         {outcomeTitle}
                     </div>
                     
-                    <p className="text-slate-500 text-sm mb-6 min-h-[40px] leading-snug max-w-[220px]">{outcomeDesc}</p>
+                    <div className="text-slate-500 text-sm mb-6 min-h-[40px] leading-snug max-w-[220px] flex flex-col justify-center items-center">
+                        {outcomeDesc}
+                    </div>
                     
                     <div className={`inline-block w-full px-4 py-3 bg-white border ${bottomBoxClass} border-opacity-30 text-sm font-bold rounded-xl shadow-sm`}>
                         {highlight}
@@ -114,8 +116,12 @@ const HowItWorks: React.FC = () => {
                 bill="RM70,000"
                 members="1,000"
                 outcomeTitle="Max Share: RM50"
-                outcomeDesc="Actual cost RM70/pax, but capped at RM50."
-                highlight="RM20 carried forward"
+                outcomeDesc={
+                    <>
+                        Actual cost RM70/pax, but <span className="block mt-1 text-brand-navy font-extrabold text-lg">capped at RM50</span>
+                    </>
+                }
+                highlight="RM20 carried forward to the next month"
             />
 
             {/* Scenario 3 - Vibrant Teal */}
