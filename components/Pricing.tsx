@@ -2,7 +2,7 @@ import React from 'react';
 import Section from './Section';
 import Button from './Button';
 import { MEMBERSHIP_PLANS } from '../constants';
-import { Check, X, Shield, Star, Crown, MessageCircle, ArrowRight, Info, Image as ImageIcon } from 'lucide-react';
+import { Check, X, Shield, Star, Crown, MessageCircle, ArrowRight, Info } from 'lucide-react';
 
 const Pricing: React.FC = () => {
   
@@ -201,10 +201,12 @@ const Pricing: React.FC = () => {
                 </p>
             </div>
             <div className="w-full md:w-5/12">
-                 <div className="aspect-[4/3] bg-brand-surface-navy rounded-2xl flex flex-col items-center justify-center border-2 border-dashed border-slate-200 text-slate-400 group overflow-hidden relative">
-                     <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-slate-100 opacity-50"></div>
-                     <ImageIcon className="w-12 h-12 mb-3 opacity-40 group-hover:scale-110 transition-transform duration-500 text-brand-blue" />
-                     <span className="text-xs font-bold uppercase tracking-widest text-slate-400">Wallet Process Illustration</span>
+                 <div className="aspect-[4/3] bg-brand-surface-navy rounded-2xl flex flex-col items-center justify-center overflow-hidden relative shadow-inner">
+                     <img 
+                        src="image16.jpg" 
+                        alt="Sharing Account Process" 
+                        className="w-full h-full object-cover"
+                     />
                  </div>
             </div>
           </div>

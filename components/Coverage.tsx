@@ -90,7 +90,7 @@ const Coverage: React.FC = () => {
 
                 {/* Right: Image - image3.jpg */}
                 <div className="lg:w-4/12 relative flex justify-center lg:justify-end">
-                    <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white w-full max-w-md aspect-[16/10] bg-teal-50 flex items-center justify-center group">
+                    <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-md aspect-[16/10] bg-teal-50 flex items-center justify-center group">
                         <img 
                             src="image3.jpg" 
                             alt="RM10 Clinic Benefit" 

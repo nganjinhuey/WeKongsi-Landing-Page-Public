@@ -62,21 +62,19 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Right: Image Placeholder */}
+                {/* Right: Image */}
                 <div className="w-full lg:w-1/2 relative h-full min-h-[400px] lg:min-h-[500px]">
                     <div className="absolute inset-0 bg-slate-200 flex items-center justify-center group overflow-hidden">
-                        <div className="absolute inset-0 bg-gradient-to-br from-slate-200 to-slate-300"></div>
+                        <img 
+                            src="image31.jpg" 
+                            alt="Join We Kongsi Movement" 
+                            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-brand-navy/20 group-hover:bg-transparent transition-colors duration-500"></div>
                         
-                        {/* Abstract graphic representation */}
-                         <div className="relative z-10 text-center p-8">
-                             <ImageIcon className="w-24 h-24 mb-4 opacity-20 mx-auto text-brand-navy" />
-                             <span className="font-bold text-slate-400 text-lg uppercase tracking-widest block">Join The Movement</span>
-                             <span className="text-slate-400 text-sm">Image Placeholder</span>
-                        </div>
-
                          {/* Interactive hover overlay */}
-                        <div className="absolute inset-0 bg-brand-navy/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                            <span className="text-white font-bold text-2xl tracking-widest border-2 border-white px-6 py-2">WE KONGSI</span>
+                        <div className="absolute inset-0 bg-brand-navy/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                            <span className="text-white font-bold text-2xl tracking-widest border-2 border-white px-6 py-2 backdrop-blur-sm">WE KONGSI</span>
                         </div>
                     </div>
                 </div>

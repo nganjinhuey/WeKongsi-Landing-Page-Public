@@ -16,6 +16,8 @@ export interface Testimonial {
   role: string;
   quote: string;
   receipt?: boolean;
+  image?: string;
+  videoUrl?: string;
 }
 
 export interface PlanItem {

@@ -9,31 +9,38 @@ const TESTIMONIAL_DATA = [
     name: "Muhammad Hanif",
     role: "Kelantan",
     quote: "My RM75 clinic bill dropped to just RM10! That's the power of sharing—real financial relief every time I visit the doctor.",
-    hasReceipt: true
+    hasReceipt: true,
+    image: "image23.jpg"
   },
   {
     id: 2,
-    type: 'static',
+    type: 'video',
     name: "Xin Min",
     role: "19, Perak",
     quote: "The RM15,000 surgery I desperately needed was made possible by WeKongsi. It lifted a massive financial burden off my parents—the community really had my back.",
-    hasReceipt: false
+    hasReceipt: false,
+    videoUrl: "https://www.youtube.com/watch?v=u2ZxoJHv0oc&t=6s",
+    image: "image24.jpg"
   },
   {
     id: 3,
-    type: 'static',
+    type: 'video',
     name: "Honey",
     role: "27, Perak",
     quote: "My RM45,000 surgery? Fully covered! It was total peace of mind for paying just RM50 a month, which is a fraction of my old insurance premium.",
-    hasReceipt: false
+    hasReceipt: false,
+    videoUrl: "https://www.youtube.com/watch?v=L8HD1zJEHjc",
+    image: "image25.jpg"
   },
   {
     id: 4,
-    type: 'static',
+    type: 'video',
     name: "Niena",
     role: "26, Johor",
     quote: "Facing a RM39,000 accident bill was terrifying, but WeKongsi handled everything so smoothly. Zero stress, total peace of mind.",
-    hasReceipt: false
+    hasReceipt: false,
+    videoUrl: "https://www.youtube.com/watch?v=FLR8F-Ohuj8&t=237s",
+    image: "image26.jpg"
   },
   // --- VIDEO CARDS ---
   {
@@ -41,28 +48,35 @@ const TESTIMONIAL_DATA = [
     type: 'video',
     name: "Syafiq",
     role: "29, Kelantan",
-    quote: "I switched from expensive insurance, and when I needed it, my RM42,000 ankle surgery was fully supported. WeKongsi gave me better value and total support."
+    quote: "I switched from expensive insurance, and when I needed it, my RM42,000 ankle surgery was fully supported. WeKongsi gave me better value and total support.",
+    videoUrl: "https://www.youtube.com/watch?v=u_IKmL7MA5E&t=11s",
+    image: "image27.jpg"
   },
   {
     id: 6,
     type: 'video',
     name: "Ainul & Abdul",
     role: "35 & 42",
-    quote: "We were skeptical at first, but when our child was admitted, the Guarantee Letter came through fast. Our doubts turned into complete confidence!"
+    quote: "We were skeptical at first, but when our child was admitted, the Guarantee Letter came through fast. Our doubts turned into complete confidence!",
+    videoUrl: "https://www.youtube.com/watch?v=9u0jeksr9Ew&t=10s",
+    image: "image28.jpg"
   },
+  // --- NEW STATIC CARDS ---
   {
     id: 7,
-    type: 'video',
-    name: "Faiz",
-    role: "35, Melaka",
-    quote: "I paid a RM2,000 deposit, but the GL came so quickly, WeKongsi refunded it all! That's what true support during an emergency looks like."
+    type: 'static',
+    name: "Mohd Hizam",
+    role: "Referrer",
+    quote: "My member was admitted for severe food poisoning, and the support was immediate. Seeing the claim handled fast proves that WeKongsi delivers real value for my community.",
+    image: "image29.jpg"
   },
   {
     id: 8,
-    type: 'video',
-    name: "Erma Marzuana",
-    role: "Seremban",
-    quote: "My child's RM8,000 treatment only cost us RM27 that month. It's incredible to get that level of protection for such a low shared cost."
+    type: 'static',
+    name: "Puan Maslina",
+    role: "Member",
+    quote: "My child was in a motor accident, but because our family of 8 is protected, they got comfortable, fast treatment at a private hospital. We Kongsi covered it all—we are so grateful!",
+    image: "image30.jpg"
   }
 ];
 
@@ -133,7 +147,7 @@ const Testimonials: React.FC = () => {
                 msOverflowStyle: 'none'
             }}
         >
-          {TESTIMONIAL_DATA.map((item, index) => (
+          {TESTIMONIAL_DATA.map((item: any, index) => (
             <div 
               key={item.id}
               onClick={() => setActiveIndex(index)}
@@ -146,12 +160,24 @@ const Testimonials: React.FC = () => {
               {/* Video Placeholder */}
               {item.type === 'video' && (
                 <div className="mb-6 w-full aspect-video bg-slate-100 rounded-xl overflow-hidden relative border border-slate-200 shadow-inner group/video flex items-center justify-center">
-                    <div className="flex flex-col items-center justify-center text-slate-300 absolute inset-0">
-                        <Video size={48} className="mb-2 opacity-50" />
-                        <span className="text-xs font-bold uppercase tracking-wider">Video Placeholder</span>
-                    </div>
+                    {/* Background Image or Generic Placeholder */}
+                    {item.image ? (
+                        <img src={item.image} alt={item.name} className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" />
+                    ) : (
+                        <div className="flex flex-col items-center justify-center text-slate-300 absolute inset-0">
+                            <Video size={48} className="mb-2 opacity-50" />
+                            <span className="text-xs font-bold uppercase tracking-wider">Watch Story</span>
+                        </div>
+                    )}
+
+                    {/* Overlay for readability if image is present */}
+                    {item.image && <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>}
+
                     {/* YouTube Style Icon */}
-                    <div className="relative z-10 w-16 h-11 bg-red-600 rounded-xl flex items-center justify-center shadow-xl hover:bg-red-700 transition-colors cursor-pointer">
+                    <div 
+                        onClick={() => item.videoUrl && window.open(item.videoUrl, '_blank')}
+                        className="relative z-10 w-16 h-11 bg-red-600 rounded-xl flex items-center justify-center shadow-xl hover:bg-red-700 transition-colors cursor-pointer"
+                    >
                         <Play size={20} className="text-white fill-white ml-0.5" />
                     </div>
                 </div>
@@ -160,10 +186,14 @@ const Testimonials: React.FC = () => {
               {/* Static Image Placeholder */}
               {item.type === 'static' && (
                 <div className="mb-6 w-full aspect-video bg-slate-100 rounded-xl overflow-hidden relative border border-slate-200 shadow-inner flex items-center justify-center">
-                    <div className="flex flex-col items-center justify-center text-slate-300">
-                        <ImageIcon size={48} className="mb-2 opacity-50" />
-                        <span className="text-xs font-bold uppercase tracking-wider">Image Placeholder</span>
-                    </div>
+                    {item.image ? (
+                        <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                    ) : (
+                        <div className="flex flex-col items-center justify-center text-slate-300">
+                            <ImageIcon size={48} className="mb-2 opacity-50" />
+                            <span className="text-xs font-bold uppercase tracking-wider">Image Placeholder</span>
+                        </div>
+                    )}
                 </div>
               )}
 

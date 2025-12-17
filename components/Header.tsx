@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { HeartHandshake, Globe, ChevronDown } from 'lucide-react';
+import { Globe, ChevronDown } from 'lucide-react';
 import Button from './Button';
 
 const Header: React.FC = () => {
@@ -31,10 +31,12 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="flex items-center space-x-2 group">
-              <div className="bg-brand-navy p-2 rounded-lg group-hover:bg-brand-navy-light transition-colors">
-                <HeartHandshake className="w-6 h-6 text-brand-teal" />
-              </div>
+            <a href="#" className="flex items-center space-x-3 group">
+              <img 
+                src="logo.jpg" 
+                alt="We Kongsi Logo" 
+                className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+              />
               <div>
                 <span className={`block font-bold text-xl text-brand-navy`}>We Kongsi</span>
                 <span className={`block text-xs font-medium text-brand-blue`}>Anyone Can Afford Healthcare</span>

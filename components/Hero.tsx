@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
 
           {/* Right Visual - image1.jpg */}
           <div className="w-full lg:w-1/2 relative">
-             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] border-[6px] border-white ring-1 ring-slate-100 bg-slate-200 group">
+             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] ring-1 ring-slate-100 bg-slate-200 group">
                 <img 
                   src="image1.jpg" 
                   alt="Happy family enjoying healthcare protection" 

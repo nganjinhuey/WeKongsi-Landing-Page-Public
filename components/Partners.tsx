@@ -1,9 +1,15 @@
 import React from 'react';
 import Section from './Section';
-import { ShieldCheck, Award, Image as ImageIcon } from 'lucide-react';
+import { ShieldCheck, Award } from 'lucide-react';
 
 const Partners: React.FC = () => {
-  const PARTNERS_BASE = [1, 2, 3, 4, 5];
+  const PARTNERS_BASE = [
+    'image17.jpg',
+    'image18.jpg',
+    'image19.jpg',
+    'image20.jpg',
+    'image21.jpg'
+  ];
   // Repeat the partners list to ensure it covers the width of any screen before duplication
   const PARTNERS_SET = [...PARTNERS_BASE, ...PARTNERS_BASE, ...PARTNERS_BASE];
 
@@ -46,22 +52,26 @@ const Partners: React.FC = () => {
                      }}>
                     <div className="flex w-max animate-marquee hover:[animation-play-state:paused] gap-6 items-center py-4">
                         {/* Original Set */}
-                        {PARTNERS_SET.map((_, idx) => (
+                        {PARTNERS_SET.map((imgSrc, idx) => (
                             <div key={`set1-${idx}`} className="bg-white border border-slate-200 shadow-sm rounded-xl min-w-[120px] w-[120px] h-[70px] flex items-center justify-center hover:shadow-lg transition-all hover:border-brand-blue/30 relative overflow-hidden group cursor-pointer flex-shrink-0">
-                                <div className="absolute inset-0 bg-slate-50 opacity-50 group-hover:opacity-0 transition-opacity"></div>
-                                <div className="flex flex-col items-center z-10">
-                                    <ImageIcon className="w-6 h-6 text-slate-300 mb-1" />
-                                    <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Partner</span>
+                                <div className="flex flex-col items-center z-10 p-2 w-full h-full">
+                                    <img 
+                                        src={imgSrc} 
+                                        alt="Partner" 
+                                        className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300 opacity-60 group-hover:opacity-100" 
+                                    />
                                 </div>
                             </div>
                         ))}
                         {/* Duplicate Set for Seamless Loop */}
-                        {PARTNERS_SET.map((_, idx) => (
+                        {PARTNERS_SET.map((imgSrc, idx) => (
                             <div key={`set2-${idx}`} className="bg-white border border-slate-200 shadow-sm rounded-xl min-w-[120px] w-[120px] h-[70px] flex items-center justify-center hover:shadow-lg transition-all hover:border-brand-blue/30 relative overflow-hidden group cursor-pointer flex-shrink-0">
-                                <div className="absolute inset-0 bg-slate-50 opacity-50 group-hover:opacity-0 transition-opacity"></div>
-                                <div className="flex flex-col items-center z-10">
-                                    <ImageIcon className="w-6 h-6 text-slate-300 mb-1" />
-                                    <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">Partner</span>
+                                <div className="flex flex-col items-center z-10 p-2 w-full h-full">
+                                    <img 
+                                        src={imgSrc} 
+                                        alt="Partner" 
+                                        className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300 opacity-60 group-hover:opacity-100" 
+                                    />
                                 </div>
                             </div>
                         ))}
@@ -82,9 +92,12 @@ const Partners: React.FC = () => {
                     </div>
                     
                     {/* Placeholder Visual */}
-                    <div className="aspect-[3/4] bg-slate-100 border-2 border-dashed border-slate-300 rounded-lg flex flex-col items-center justify-center text-center p-6 group-hover:bg-slate-50 transition-colors">
-                        <ImageIcon className="w-16 h-16 text-slate-300 mb-4 opacity-50" />
-                        <span className="text-slate-400 font-bold uppercase tracking-wider text-sm">Certificate<br/>Placeholder</span>
+                    <div className="aspect-[3/4] bg-white rounded-lg flex flex-col items-center justify-center text-center overflow-hidden shadow-sm group-hover:bg-slate-50 transition-colors">
+                        <img 
+                            src="image22.jpg" 
+                            alt="Shariah Compliance Certificate" 
+                            className="w-full h-full object-cover" 
+                        />
                     </div>
 
                     <div className="text-center mt-4">

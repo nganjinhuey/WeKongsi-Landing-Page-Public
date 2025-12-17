@@ -6,20 +6,20 @@ import {
   FileSearch, 
   MapPin, 
   Stethoscope, 
-  Activity,
-  Bed,
-  Truck,
-  DollarSign,
-  Thermometer,
-  Pill,
-  Syringe,
-  Microscope,
-  Baby,
-  TrendingUp,
-  Building2,
-  Banknote,
-  Calendar,
-  Shield
+  Activity, 
+  Bed, 
+  Truck, 
+  DollarSign, 
+  Thermometer, 
+  Pill, 
+  Syringe, 
+  Microscope, 
+  Baby, 
+  TrendingUp, 
+  Building2, 
+  Banknote, 
+  Calendar, 
+  Shield 
 } from 'lucide-react';
 import { ChartData, FeatureItem, Testimonial, PlanItem } from './types';
 
@@ -128,24 +128,57 @@ export const MEMBERSHIP_PLANS: PlanItem[] = [
 
 export const TESTIMONIALS: Testimonial[] = [
   { 
-    name: "Honey", 
-    role: "27, Perak", 
-    quote: "I used to pay RM200-300 for insurance, but with WeKongsi, I paid less than RM50/month and my RM45,000 surgery was fully covered!" 
-  },
-  { 
     name: "Muhammad Hanif", 
     role: "Kelantan", 
-    quote: "The RM10 clinic visits have been a lifesaver for my family's common flu. My RM75 bill was reduced to just RM10—you can't beat that affordability!",
-    receipt: true
+    quote: "My RM75 clinic bill dropped to just RM10! That's the power of sharing—real financial relief every time I visit the doctor.",
+    receipt: true,
+    image: "image23.jpg"
   },
   { 
-    name: "Syafiq", 
-    role: "29, Kelantan", 
-    quote: "I canceled my expensive insurance years ago, and I'm so glad I did. When my RM42,000 ankle surgery happened, WeKongsi gave me full support without the overwhelming monthly premiums." 
+    name: "Xin Min", 
+    role: "19, Perak", 
+    quote: "The RM15,000 surgery I desperately needed was made possible by WeKongsi. It lifted a massive financial burden off my parents—the community really had my back.",
+    videoUrl: "https://www.youtube.com/watch?v=u2ZxoJHv0oc&t=6s",
+    image: "image24.jpg"
+  },
+  { 
+    name: "Honey", 
+    role: "27, Perak", 
+    quote: "My RM45,000 surgery? Fully covered! It was total peace of mind for paying just RM50 a month, which is a fraction of my old insurance premium.",
+    videoUrl: "https://www.youtube.com/watch?v=L8HD1zJEHjc",
+    image: "image25.jpg"
   },
   { 
     name: "Niena", 
     role: "26, Johor", 
-    quote: "My accident bill was RM39,000, and I was so scared it wouldn't be fully covered. WeKongsi handled everything so smoothly—it was total peace of mind for the cost of a few movie tickets a month!" 
+    quote: "Facing a RM39,000 accident bill was terrifying, but WeKongsi handled everything so smoothly. Zero stress, total peace of mind.",
+    videoUrl: "https://www.youtube.com/watch?v=FLR8F-Ohuj8&t=237s",
+    image: "image26.jpg"
+  },
+  { 
+    name: "Syafiq", 
+    role: "29, Kelantan", 
+    quote: "I switched from expensive insurance, and when I needed it, my RM42,000 ankle surgery was fully supported. WeKongsi gave me better value and total support.",
+    videoUrl: "https://www.youtube.com/watch?v=u_IKmL7MA5E&t=11s",
+    image: "image27.jpg"
+  },
+  { 
+    name: "Ainul & Abdul", 
+    role: "35 & 42", 
+    quote: "We were skeptical at first, but when our child was admitted, the Guarantee Letter came through fast. Our doubts turned into complete confidence!",
+    videoUrl: "https://www.youtube.com/watch?v=9u0jeksr9Ew&t=10s",
+    image: "image28.jpg"
+  },
+  { 
+    name: "Mohd Hizam", 
+    role: "Referrer", 
+    quote: "My member was admitted for severe food poisoning, and the support was immediate. Seeing the claim handled fast proves that WeKongsi delivers real value for my community.",
+    image: "image29.jpg"
+  },
+  { 
+    name: "Puan Maslina", 
+    role: "Member", 
+    quote: "My child was in a motor accident, but because our family of 8 is protected, they got comfortable, fast treatment at a private hospital. We Kongsi covered it all—we are so grateful!",
+    image: "image30.jpg"
   }
 ];
