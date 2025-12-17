@@ -24,23 +24,16 @@ const HospitalNetwork: React.FC = () => {
       </div>
 
       <div className="relative w-full">
-        {/* Gradient Masks for fade effect on edges */}
-        <div className="absolute top-0 left-0 w-24 md:w-48 h-full bg-gradient-to-r from-slate-50 to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute top-0 right-0 w-24 md:w-48 h-full bg-gradient-to-l from-slate-50 to-transparent z-10 pointer-events-none"></div>
-
         {/* Marquee Container */}
         <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
           {SCROLL_ITEMS.map((item, index) => (
             <div key={index} className="mx-4">
-              <div className="w-64 h-32 bg-white rounded-xl shadow-sm flex flex-col items-center justify-center p-4 gap-2 opacity-60 hover:opacity-100 transition-all duration-300 hover:border-brand-blue/50 hover:bg-brand-surface-blue group cursor-default select-none">
+              <div className="w-64 h-32 bg-white rounded-xl shadow-sm flex flex-col items-center justify-center p-4 gap-2 transition-all duration-300 hover:border-brand-blue/50 hover:bg-brand-surface-blue group cursor-default select-none">
                 <img 
                     src={item.image} 
                     alt={item.label} 
-                    className="h-12 w-auto object-contain mb-1"
+                    className="h-16 w-auto object-contain"
                 />
-                <div className="text-center">
-                    <div className="text-xs font-bold text-slate-400 uppercase tracking-wider group-hover:text-brand-navy">{item.label}</div>
-                </div>
               </div>
             </div>
           ))}

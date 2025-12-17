@@ -47,7 +47,7 @@ const Coverage: React.FC = () => {
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-16">
                 
                 {/* Left: Text Content & Bubbles */}
-                <div className="lg:w-8/12 text-left">
+                <div className="lg:w-7/12 text-left">
                     <div className="inline-flex items-center px-3 py-1 rounded-full bg-brand-teal text-brand-navy text-xs font-bold uppercase tracking-wider mb-6 shadow-sm border-2 border-white">
                         <ShieldCheck className="w-3 h-3 mr-1" /> Exclusive Perk
                     </div>
@@ -89,8 +89,8 @@ const Coverage: React.FC = () => {
                 </div>
 
                 {/* Right: Image - image3.jpg */}
-                <div className="lg:w-4/12 relative flex justify-center lg:justify-end">
-                    <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-md aspect-[16/10] bg-teal-50 flex items-center justify-center group">
+                <div className="lg:w-5/12 relative flex justify-center lg:justify-end">
+                    <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-lg aspect-[16/10] bg-teal-50 flex items-center justify-center group">
                         <img 
                             src="image3.jpg" 
                             alt="RM10 Clinic Benefit" 

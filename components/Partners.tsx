@@ -45,11 +45,7 @@ const Partners: React.FC = () => {
                 <h4 className="text-sm font-bold text-slate-800 uppercase tracking-widest mb-4 border-b border-slate-100 pb-2 inline-block">Trusted Technology & Compliance Partners</h4>
                 
                 {/* Scrolling Marquee Container */}
-                <div className="w-full relative overflow-hidden" 
-                     style={{ 
-                         maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)', 
-                         WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' 
-                     }}>
+                <div className="w-full relative overflow-hidden">
                     <div className="flex w-max animate-marquee hover:[animation-play-state:paused] gap-6 items-center py-4">
                         {/* Original Set */}
                         {PARTNERS_SET.map((imgSrc, idx) => (
@@ -58,7 +54,7 @@ const Partners: React.FC = () => {
                                     <img 
                                         src={imgSrc} 
                                         alt="Partner" 
-                                        className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300 opacity-60 group-hover:opacity-100" 
+                                        className="w-full h-full object-contain transition-all duration-300" 
                                     />
                                 </div>
                             </div>
@@ -70,7 +66,7 @@ const Partners: React.FC = () => {
                                     <img 
                                         src={imgSrc} 
                                         alt="Partner" 
-                                        className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300 opacity-60 group-hover:opacity-100" 
+                                        className="w-full h-full object-contain transition-all duration-300" 
                                     />
                                 </div>
                             </div>
