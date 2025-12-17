@@ -95,10 +95,6 @@ const Partners: React.FC = () => {
                             className="w-full h-full object-cover" 
                         />
                     </div>
-
-                    <div className="text-center mt-4">
-                        <span className="text-xs font-bold text-slate-400 uppercase tracking-wide">Verified Document</span>
-                    </div>
                 </div>
             </div>
         </div>
